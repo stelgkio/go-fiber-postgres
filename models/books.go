@@ -3,7 +3,7 @@ package models
 import "gorm.io/gorm"
 
 type Books struct {
-	ID        uint    `gorm:"primary key;autoIncrement" json:"Id"`
+	ID        uint    `gorm:"primarykey;autoIncrement" json:"Id"`
 	Author    *string `json:"author"`
 	Title     *string `json:"title"`
 	Publisher *string `json:"publisher"`
